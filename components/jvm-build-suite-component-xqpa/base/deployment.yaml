@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-xqpa
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:cb7b95432a144e71a281f2c82a9ec1d8
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:f41c6a6dd76d8d6b0a65c5d4df237d3d934de62bd67853257655a0af7fc06fd6
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
