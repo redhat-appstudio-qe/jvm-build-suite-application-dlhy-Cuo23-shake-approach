@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-xqpa
+  namespace: jvm-build-vzta-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:f41c6a6dd76d8d6b0a65c5d4df237d3d934de62bd67853257655a0af7fc06fd6
+        name: container-image
+        resources: {}
+status: {}
